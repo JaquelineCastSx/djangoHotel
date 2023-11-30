@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+
+{% block title %}
+Radiant Horizon
+{% endblock %}
+
+
+{% block content %}
+
+<div id="divH">
+  <h1>Workers</h1>
+</div>
+
+<div id="divI">
+  <ul>
+    {% for x in myworkers %}
+    <div id="listForm">
+      <li><a href="workerDetail/{{ x.id }}">{{ x.nombre }} {{ x.apellido }}</a></li>
+    </div>
+    {% endfor %}
+  </ul>
+</div> 
+
+
+{% endblock %}

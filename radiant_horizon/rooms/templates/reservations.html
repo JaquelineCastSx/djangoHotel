@@ -1,0 +1,31 @@
+{% extends "master.html" %} 
+{% block title %} Radiant Horizon {% endblock %} 
+{%block content %}
+
+<div id="divH">
+  <h1>Reservations</h1>
+  <h4>
+    Here you can see all the reservations that had been made in our hotel, be
+    careful with all the data, this is sensitive information
+  </h4>
+</div>
+
+<div id="divI">
+  <ul>
+    {% for x in myreservations %}
+
+    <div id="listForm">
+      <li>
+        Tipo de pago: {{ x.pago.tipo }} <br />
+        <br />
+        Fecha de ingreso: {{ x.fechaIngreso }} <br />
+        <br />
+        Numero de habitacion: {{x.numhabitacion.numhabitacion}} <br />
+      </li>
+    </div>
+
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "master.html" %}
+
+{% block title %}
+Radiant Horizon Rooms
+{% endblock %}
+
+
+{% block content %}
+
+<div id="divH">
+  <h1>All rooms</h1>
+  <p>Th reserved rooms can be seen here, for more details abou the rooms, click on the name.</p>
+</div>
+  
+<div id="divI">
+  <ul>
+    {% for x in myrooms %}
+      
+        <div id="listForm">
+          <li>
+            <a href="roomDetail/{{ x.id }}">Numero de Habitacion: {{ x.numhabitacion }} <br>Categoria: {{ x.categoria.categoria }}</a>
+          </li>
+          
+        </div>
+    {% endfor %}
+  </ul>
+</div>
+
+
+{% endblock %}

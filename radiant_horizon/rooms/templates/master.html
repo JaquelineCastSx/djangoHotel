@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class="navbar">
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'clients' %}">Clients</a>
+    <a href="{% url 'reservations' %}">Reservations</a>
+    <a href="{% url 'rooms' %}">Rooms</a>
+    <a href="{% url 'roomt' %}">Roomtypes</a> 
+    <a href="{% url 'payments' %}">Payments</a>
+    <a href="{% url 'workers' %}">Workers</a>
+  </div>
+  <div class="mainContent">
+    {% block content %}
+    {% endblock %}
+  </div>
+<div id="footer">
+  &copy; 2023 Radian Horizon. All rights reserved.
+  <div class="footerD">
+    <div id="divE">
+      <p>Algunas habitaciones cuentan con servicio Pet Friendly, revisa los términos y condiciones de la habitación</p>
+    </div>
+    <div id="divF">
+      <p>Búscanos en redes sociales</p>
+      <br>
+      <img src="../static/images/facebook.png" alt="facebook logo">
+      <img src="../static/images/gmail.png" alt="gmail logo">
+      <img src="../static/images/tiktok.png" alt="tiktok logo">
+    </div>
+    <div id="divG">
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

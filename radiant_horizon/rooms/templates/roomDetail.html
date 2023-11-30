@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
+
+
+{% block content %}
+
+<h1> Numero de Habitacion: {{ myroom_detail.numhabitacion }}  Precio: {{ myroom_detail.precio }}</h1>
+  
+<p>Maximo de Personas: {{ myroom_detail.max_personas }}</p>
+<p>Edificio: {{ myroom_detail.edificio }}</p>
+<p>Categoria: {{ myroom_detail.categoria.categoria }}</p>
+<p>Encargado: {{ myroom_detail.encargado.nombre }} {{ myroom_detail.encargado.apellido }}</p>
+
+<p>Back to <a href="/rooms">Cuartos</a></p>
+
+{% endblock %}

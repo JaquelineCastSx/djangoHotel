@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Radiant Horizon
+{% endblock %}
+
+
+{% block content %}
+<div id="divH">
+  <h1>Clients register</h1>
+  <h4>Don't forget to add all the customer information</h4>
+  <img src="../static/images/signIn.png" alt="register image">
+</div>
+
+<div id="divI">
+  <ul>
+    {% for x in myclients %}
+    <div id="listForm">
+      <li><a href="clientDetail/{{ x.id }}">
+        <strong> Name:</strong> {{ x.nombre }}  <br> <strong> Lastname:</strong> {{ x.apellido }}</a></li>
+        <br>
+    </div>
+    {% endfor %}
+  </ul>
+</div>  
+
+
+
+{% endblock %}

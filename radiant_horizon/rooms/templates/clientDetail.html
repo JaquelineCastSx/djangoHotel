@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mymember.firstname }} {{ mymember.lastname }}
+{% endblock %}
+
+
+{% block content %}
+
+<h2>Name: {{ mydetails.nombre }} <br> Lastname:{{ mydetails.apellido }}</h2>
+  
+<p>Phone: {{ mydetails.telefono }}</p>
+<p>Client Type: {{ mydetails.tipo_cliente }}</p>
+
+
+
+{% endblock %}

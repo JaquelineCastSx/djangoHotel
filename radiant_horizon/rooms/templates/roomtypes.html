@@ -1,0 +1,31 @@
+{% extends "master.html" %}
+
+{% block title %}
+Radiant Horizon Rooms Categories
+{% endblock %}
+
+
+{% block content %}
+
+<div id="divH">
+    <h1>Room categories</h1>
+    <img src="../static/images/lasvegas.jpeg" alt="">
+    <img src="../static/images/pokemon.jpeg" alt="">
+    <img src="../static/images/selvRoom.jpeg" alt="">
+    <img src="../static/images/renac.png" alt="">
+    <img src="../static/images/work.jpg" alt="">
+</div>
+
+<div id="divI">
+    {% for x in myroom_types %}
+    <h3>Categoria: {{ x.categoria }} 
+        <br>Total Cuartos: {{ x.total_cuartos }}</h3>
+      
+    <p>Descripcion:  {{ x.descripcion }}</p>
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}

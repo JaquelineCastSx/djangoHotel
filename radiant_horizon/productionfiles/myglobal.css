@@ -1,0 +1,188 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #3F3C3B;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center the navbar */
+  padding: 20px;
+}
+
+.navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #FF0A68;
+  color: black;
+}
+
+/* Responsive navigation menu */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items on small screens */
+  }
+
+  .navbar a {
+    width: 100%;
+  }
+}
+#footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+.mainContent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, .7fr);
+}
+.mainContent h1{
+  font-size: 5vw;
+  color: #E00056;
+  font-weight: bolder;
+}
+.mainContent h3{
+  font-size: 3vw;
+  color: #000;
+}
+.mainContent h4{
+  font-size: 2vw;
+  color: #000;
+}
+.mainContent p{
+  font-size: 1.5vw;
+  color: #000;
+}
+.mainContent #divA { 
+  grid-area: 1 / 1 / 2 / 2; 
+  max-height: 600px;
+  padding: 30px;
+}
+.mainContent #divB{ 
+  grid-area: 1 / 2 / 2 / 3; 
+  max-height: 500px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  padding: 30px;
+  text-align: center;
+  background: 
+      radial-gradient(calc(1.28*90px + 33.75px/2) at left 50% bottom calc(-.8*90px),#fcdfc5 calc(100% - 33.75px),#f0f5fa calc(101% - 33.75px) 100%,#0000 101%) calc(2*90px) calc(-1*calc(1.5*90px + 33.75px)),
+      radial-gradient(calc(1.28*90px + 33.75px/2) at left 50% bottom calc(-.8*90px),#F8B377 calc(100% - 33.75px),#f0f5fa calc(101% - 33.75px) 100%,#0000 101%) calc(-1*90px) calc(calc(1.5*90px + 33.75px)/-2),
+      radial-gradient(calc(1.28*90px + 33.75px/2) at left 50% top    calc(-.8*90px),#F8B377 calc(100% - 33.75px),#f0f5fa calc(101% - 33.75px) 100%,#0000 101%) 0 calc(1.5*90px + 33.75px),
+      radial-gradient(calc(1.28*90px + 33.75px/2) at left 50% top    calc(-.8*90px),#fcdfc5 calc(100% - 33.75px),#f0f5fa calc(101% - 33.75px) 100%,#0000 101%) 90px calc(calc(1.5*90px + 33.75px)/ 2),
+      linear-gradient(#fcdfc5 50%,#F8B377 0);
+  background-size: calc(4*90px) calc(1.5*90px + 33.75px);
+  border-radius: 90px;
+  margin: 10px;
+}
+.mainContent #divC { 
+  grid-area: 2 / 1 / 3 / 3; 
+  align-items: center;
+  align-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.mainContent #divB img{
+  max-width: 600px;
+  max-height: 400px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 60px;
+  border-color: #000;
+  border: 2;
+}
+.mainContent #divC p{
+  max-width: 1000px;
+  padding: 30px;
+}
+.footerD{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, .5fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.footerD #divE{
+  grid-area: 1 / 1 / 2 / 2;
+}
+.footerD #divF{
+  grid-area: 1 / 2 / 2 / 3;
+}
+.footerD #divG{
+  grid-area: 1 / 3 / 2 / 4;
+}
+.footerD #divF img{
+  margin: 8px;
+}
+.footerD #divF p{
+  font-size: 25;
+}
+.mainContent #divH { 
+  grid-area: 1 / 1 / 2 / 2; 
+  align-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+.mainContent #divH h1{ 
+  text-align: center;
+}
+.mainContent #divH h4{ 
+  text-align: center;
+  font-size: large;
+  max-width: 800px;
+}
+.mainContent #divI{ 
+  grid-area: 1 / 2 / 2 / 3; 
+  padding: 20px;
+  align-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: start;
+  overflow: scroll;
+}
+.mainContent #divI h3{
+  color: #F37D16;
+
+}
+.mainContent #divI a, ul{
+  text-decoration: none;
+  color: #000;
+  font-size: 26px;
+}
+.mainContent #divI a:hover{
+  color: #F37D16;
+}
+.mainContent #divI ul{
+  list-style-type: none;
+}
+.mainContent #divH img{
+  border-radius: 40px;
+  padding: 15px;
+  max-width: 400px;
+  max-height: 300px;
+}
+#listForm{
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+  width: auto;
+  margin: 10px;
+}

@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+
+{% block title %}
+Radiant Horizon
+{% endblock %}
+
+
+{% block content %}
+<div id="divH">
+  <h1>Payment Type</h1>
+</div>
+
+<div id="divI">
+  <ul>
+    {% for x in mypaymenttype %}
+    <div id="listForm">
+      <li>Tipo: {{ x.tipo }} 
+        <br>Cargo por Servicio: {{ x.cargoServicio }}</li>
+    </div>
+    {% endfor %}
+  </ul>  
+</div>
+
+
+{% endblock %}
