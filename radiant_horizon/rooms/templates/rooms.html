@@ -8,8 +8,16 @@ Radiant Horizon Rooms
 {% block content %}
 
 <div id="divH">
-  <h1>All rooms</h1>
-  <p>Th reserved rooms can be seen here, for more details abou the rooms, click on the name.</p>
+  <div id="divJ1">
+    <h1>All rooms</h1>
+  </div>
+  <div id="divJ2">
+    <p>Th reserved rooms can be seen here, for more details about the rooms, click on the name.</p>
+  </div>
+  <div id="divJ3">
+    <img src="../static/images/hotel.png" alt="">
+  </div>
+  
 </div>
   
 <div id="divI">
@@ -18,7 +26,7 @@ Radiant Horizon Rooms
       
         <div id="listForm">
           <li>
-            <a href="roomDetail/{{ x.id }}">Numero de Habitacion: {{ x.numhabitacion }} <br>Categoria: {{ x.categoria.categoria }}</a>
+            <a href="roomDetail/{{ x.id }}">Número de Habitacioón: {{ x.numhabitacion }} <br>Categoria: {{ x.categoria.categoria }}</a>
           </li>
           
         </div>
