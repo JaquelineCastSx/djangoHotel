@@ -7,11 +7,17 @@
 
 {% block content %}
 
-<h1>{{ myworker_detail.nombre }} {{ myworker_detail.apellido }}</h1>
-  
-<p>Puesto: {{ myworker_detail.cargo }}</p>
+<div id="divH">
+  <div id="divJ1">
+    <h1>{{ myworker_detail.nombre }} {{ myworker_detail.apellido }}</h1>
+  </div>
+  <div id="divJ2">
+    <p>Back to <a href="/workers">Workers</a></p>
+  </div>
+</div>
 
-
-<p>Back to <a href="/workers">Workers</a></p>
+<div id="divI">
+  <p>Puesto: {{ myworker_detail.cargo }}</p>
+</div>
 
 {% endblock %}

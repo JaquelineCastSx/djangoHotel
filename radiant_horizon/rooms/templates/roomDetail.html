@@ -7,17 +7,22 @@
 
 {% block content %}
 <div id="divH">
-  <h1> Número de Habitacion: {{ myroom_detail.numhabitacion }}  Precio: {{ myroom_detail.precio }}</h1>
+  <div id="divJ1">
+    <h1> Room number: {{ myroom_detail.numhabitacion }}  Price: {{ myroom_detail.precio }}</h1>
+  </div>
+  <div id="divJ2">
+    <p>Back to <a href="/rooms">Cuartos</a></p>
+  </div>
 </div>
 
 <div id="divI">
-  <p>Máximo de Personas: {{ myroom_detail.max_personas }}</p>
-  <p>Edificio: {{ myroom_detail.edificio }}</p>
-  <p>Categoría: {{ myroom_detail.categoria.categoria }}</p>
-  <p>Encargado: {{ myroom_detail.encargado.nombre }} {{ myroom_detail.encargado.apellido }}</p>
+  <p>Max capacity: {{ myroom_detail.max_personas }}</p>
+  <p>Building: {{ myroom_detail.edificio }}</p>
+  <p>Categorie: {{ myroom_detail.categoria.categoria }}</p>
+  <p>Assigned to: {{ myroom_detail.encargado.nombre }} {{ myroom_detail.encargado.apellido }}</p>
 </div>  
 
 
-<p>Back to <a href="/rooms">Cuartos</a></p>
+
 
 {% endblock %}
